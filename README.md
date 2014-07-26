@@ -18,7 +18,7 @@ but I thought I'd have some fun and make my own solution.
 
 Operation
 ====
-I created a simple PHP page that presents a very simple - but pretty! - GUI (using
+I created a simple PHP page that presents a very simple - but pretty! - GUI, using
 JavaScript buttons from <a href='https://plus.google.com/u/0/114294210195147580398?rel=author' target='_blank'>Saran Chamling</a> 
 at <a href='http://www.sanwebe.com/2013/01/40-css-buttons-from-codepen' target='_blank'>Codepen</a>, 
 <a href='http://jquery.com/' target='_blank'>JQuery</a>, 
