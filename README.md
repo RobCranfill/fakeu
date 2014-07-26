@@ -20,7 +20,7 @@ at [Codepen](http://www.sanwebe.com/2013/01/40-css-buttons-from-codepen),
 [JQuery](http://jquery.com/), 
 and [AJAX](http://api.jquery.com/jquery.ajax/).
 
-Ultimately, the heyu command is issued by PHP, which, being a server-side things,
+Ultimately, the heyu command is issued by PHP, which, being a server-side thing,
 cannot be directly invoked by HTML or JavaScript; hence the use of AJAX.
 
 But take a look at the files - it's really pretty simple. (I had attempted
