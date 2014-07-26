@@ -35,7 +35,7 @@ Anyway, enjoy! Feel free to re-use, to ask me questions, etc.
 
 Screen shot
 ====
-![screen shot](https://raw.github.com/RobCranfill/fakeu/screenshot1.png)
+![screen shot](https://github.com/RobCranfill/fakeu/blob/master/screenshot1.png)
 
 
  /rob
