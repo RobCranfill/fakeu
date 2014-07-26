@@ -32,4 +32,10 @@ a pure-PHP solution for a while, but it was horrendous. And non-functional.)
 
 Anyway, enjoy! Feel free to re-use, to ask me questions, etc.
 
+
+Screen shot
+====
+![screen shot](https://raw.github.com/RobCranfill/fakeu/screenshot1.png)
+
+
  /rob
