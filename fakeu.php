@@ -1,10 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
 <html>
-<!-- g3: good good good! -->
+<!-- A simple GUI for heyu. 
+	robcranfill@gmail.com
+-->
 <head>
 	<title>fakeu</title>
 	<link rel="stylesheet" type="text/css" href="switchButtonSingle_2.css">
-	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
 	<script>
 		function sendToHeyu(unitCode, onOrOff)
 			{
