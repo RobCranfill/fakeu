@@ -55,8 +55,8 @@ function makeButton($name, $unit)
     {
     echo "<tr width='300px'>\n";
     echo " <td>$name</td>\n";
-		echo " <td width='150px'><a href='#' class='btnGreen' onclick='sendToHeyu(\"$unit\", \"on\" )'></a></td>\n";
-		echo " <td width='150px'><a href='#' class='btnRed'   onclick='sendToHeyu(\"$unit\", \"off\")'></a></td>\n";
+		echo " <td width='150px'><a href='#' class='btn green' onclick='sendToHeyu(\"$unit\", \"on\" )'></a></td>\n";
+		echo " <td width='150px'><a href='#' class='btn red'   onclick='sendToHeyu(\"$unit\", \"off\")'></a></td>\n";
     echo "</tr>\n";
     }
 
