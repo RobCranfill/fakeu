@@ -4,6 +4,12 @@ A simple implementation of a web interface to heyu, the
 <a href='http://en.wikipedia.org/wiki/X10_%28industry_standard%29' target='_blank'>X10</a>
  controller.
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Motivation](#user-content-motivation)
+- [Operation](#user-content-operation)
+- [Screen shot](#user-content-screen-shot)
+- [Requirements](#user-content-requirements)
 
 Motivation
 ====
