@@ -4,7 +4,7 @@ A simple implementation of a web interface to heyu, the
 <a href='http://en.wikipedia.org/wiki/X10_%28industry_standard%29' target='_blank'>X10</a>
  controller.
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents**
 
 - [Motivation](#user-content-motivation)
 - [Operation](#user-content-operation)
@@ -52,3 +52,5 @@ PHP (I used version 5.4.4-10), a web server (I used Apache2 2.2.22 (Debian)) and
 
 
  /rob
+
+The table of contents for this page were generated with [DocToc](http://doctoc.herokuapp.com/)*
