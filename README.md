@@ -53,4 +53,4 @@ PHP (I used version 5.4.4-10), a web server (I used Apache2 2.2.22 (Debian)) and
 
  /rob
 
-The table of contents for this page were generated with [DocToc](http://doctoc.herokuapp.com/)*
+The table of contents for this page were generated with [DocToc](http://doctoc.herokuapp.com/)
