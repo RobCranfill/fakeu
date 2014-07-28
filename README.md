@@ -39,9 +39,10 @@ Screen shot
 ====
 ![screen shot](https://github.com/RobCranfill/fakeu/blob/master/screenshot1.png)
 
+
 Requirements
 ====
-pPHP,a web server (iI used Apacehe2) and of course 'heyu'.
+PHP (I used version 5.4.4-10), a web server (I used Apache2 2.2.22 (Debian)) and of course 'heyu' (mine is 2.10).
 
 
  /rob
