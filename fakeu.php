@@ -2,11 +2,51 @@
 <html>
 <!-- A simple GUI for heyu. 
 	robcranfill@gmail.com
+	Handles two different screen sizes (an iPhone and a Nexus7) - crudely.
 -->
 <head>
-	<title>fakeu</title>
-	<link rel="stylesheet" type="text/css" href="switchButtonSingle_2.css">
+	<title>fakeu v2.0</title>
+
 	<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+
+<!-- Let's 'sniff' the browser instead of looking at screen attributes... -->
+<?php
+	$browser = 'other';
+	if (strpos($_SERVER['HTTP_USER_AGENT'], "iPhone")){
+		$browser = 'iphone';
+		}
+	if (strpos($_SERVER['HTTP_USER_AGENT'], "Nexus 7")){
+		$browser = 'nexus7';
+		}
+?>
+
+<?php
+if ($browser === 'iphone'){
+?>
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="fakeu_iphone.css"
+	/>
+<?php } ?>
+
+<?php if ($browser === 'nexus7'){ ?>
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="fakeu_nexus7.css"
+	/>
+<?php } ?>
+
+<?php if ($browser === 'other'){ ?>
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="fakeu_other.css"
+	/>
+<?php } ?>
+
+	  
 	<script>
 		function sendToHeyu(unitCode, onOrOff)
 			{
@@ -24,16 +64,10 @@
 				);
 			}
 	</script>
-<style type="text/css">
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-	body, table, tr, td
-		{
-		font-family: Oswald;
-		font-size: 12px;
-		color: navy;
-		//	background-color: maroon;
-		}
-</style>
+
+<!-- Magic tag for iPhone to create non-browser window for "Home Screen" shortcut -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
 </head>
 
 <body>
@@ -43,20 +77,21 @@
 <?php
 
 $codes = [
-	"LivingRoom"    => "A1",
-	"FrontStairs"   => "A2",
-	"FrontDeck"     => "A4",
-	"FrontPorch"    => "B1",
-	"BackEaves"     => "B2",
-	"test"          => "A13"
+	"Living Room"  => "A1",
+	"Front Stairs" => "A2",
+	"Front Deck"   => "A4",
+	"Front Porch"  => "B1",
+	"Back Eaves"   => "B2",
+	"test"         => "A13"
 	];
+
 
 function makeButton($name, $unit)
     {
-    echo "<tr width='300px'>\n";
-    echo " <td>$name</td>\n";
-		echo " <td width='150px'><a href='#' class='btn green' onclick='sendToHeyu(\"$unit\", \"on\" )'></a></td>\n";
-		echo " <td width='150px'><a href='#' class='btn red'   onclick='sendToHeyu(\"$unit\", \"off\")'></a></td>\n";
+    echo "<tr>\n";
+    echo " <td class='table_column_label'>$name</td>\n";
+		echo " <td class='table_column_button'><a href='#' class='btn green' onclick='sendToHeyu(\"$unit\", \"on\" )'></a></td>\n";
+		echo " <td class='table_column_button'><a href='#' class='btn red'   onclick='sendToHeyu(\"$unit\", \"off\")'></a></td>\n";
     echo "</tr>\n";
     }
 
@@ -68,5 +103,12 @@ foreach ($codes as $desc => $code)
 ?>
 
 </table>
+
+<!--
+<?php
+	echo $_SERVER['HTTP_USER_AGENT'];
+?>
+-->
+
 </body>
 </html>
